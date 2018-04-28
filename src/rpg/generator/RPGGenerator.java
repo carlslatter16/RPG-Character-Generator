@@ -28,7 +28,7 @@ public class RPGGenerator {
     {         
         JFrame frame = new GUIINFO();
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(600, 550));
+        frame.setPreferredSize(new Dimension(500, 500));
         frame.pack();
         frame.setVisible(true);     
     }

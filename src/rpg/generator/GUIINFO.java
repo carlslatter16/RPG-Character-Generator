@@ -6,8 +6,10 @@
 package rpg.generator;
 
 import java.util.Random;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
+import javax.swing.JLabel;
+
+
 
 /**
  *
@@ -18,7 +20,7 @@ public class GUIINFO extends javax.swing.JFrame {
     /**
      * Creates new form GUIRPG
      */
-    
+   
     
     public GUIINFO() {
         initComponents();
@@ -33,9 +35,7 @@ public class GUIINFO extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -43,12 +43,6 @@ public class GUIINFO extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jComboBox5 = new javax.swing.JComboBox<>();
-        jComboBox6 = new javax.swing.JComboBox<>();
-        jComboBox7 = new javax.swing.JComboBox<>();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
@@ -56,6 +50,14 @@ public class GUIINFO extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
@@ -65,22 +67,8 @@ public class GUIINFO extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setLabel("Random");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("RPG CHARACTER GENERATOR");
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elf", "Human", "Dwarf", "Orc", "Goblin", "Hylian", "Argonian", "Khajiit" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
 
         jLabel2.setText("Race");
 
@@ -96,23 +84,6 @@ public class GUIINFO extends javax.swing.JFrame {
 
         jLabel8.setText("Proficiences");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Agender" }));
-
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "16", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100" }));
-
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lawful Good", "Neutral Good", "Chaotic Good", "Lawful Neutral", "True Neutral", "Chaotic Neutral", "Lawful Evil", "Neutral Evil", "Chaotic Evil" }));
-
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rouge", "Sorcerer", "Wizard" }));
-        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox5ActionPerformed(evt);
-            }
-        });
-
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pit Fighter", "Builder", "Blacksmith", "HIghwayman", "Chef", "Harlot", "Aristocrat" }));
-
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lockpicker", "Tinkerer", "Armor-Clad", "Nimble", "Weightlifter" }));
-
         jButton3.setText("Random");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,19 +92,65 @@ public class GUIINFO extends javax.swing.JFrame {
         });
 
         jButton4.setText("Random");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setText("Random");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("Random");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("Random");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setText("Random");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Randomize All");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Randomize Me");
+
+        jLabel10.setText("Randomize Me");
+
+        jLabel11.setText("Randomize Me");
+
+        jLabel12.setText("Randomize Me");
+
+        jLabel13.setText("Randomize Me");
+
+        jLabel14.setText("Randomize Me");
+
+        jLabel15.setText("Randomize Me");
+
+        jButton1.setText("Random");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -162,9 +179,6 @@ public class GUIINFO extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(358, Short.MAX_VALUE)
-                        .addComponent(jButton2))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3)
@@ -174,16 +188,16 @@ public class GUIINFO extends javax.swing.JFrame {
                             .addComponent(jLabel6)
                             .addComponent(jLabel7)
                             .addComponent(jLabel8))
-                        .addGap(42, 42, 42)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox5, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox6, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(35, 35, 35)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton1)
                             .addComponent(jButton3)
@@ -191,62 +205,60 @@ public class GUIINFO extends javax.swing.JFrame {
                             .addComponent(jButton5)
                             .addComponent(jButton6)
                             .addComponent(jButton7)
-                            .addComponent(jButton8))))
-                .addGap(22, 22, 22))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(131, 131, 131))
+                            .addComponent(jButton8)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(80, 80, 80)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jLabel1)
-                .addGap(42, 42, 42)
+                .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel9)
+                    .addComponent(jButton1))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3))
+                    .addComponent(jButton3)
+                    .addComponent(jLabel10))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4))
+                    .addComponent(jButton4)
+                    .addComponent(jLabel11))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5))
+                    .addComponent(jButton5)
+                    .addComponent(jLabel12))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6))
+                    .addComponent(jButton6)
+                    .addComponent(jLabel13))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7))
+                    .addComponent(jButton7)
+                    .addComponent(jLabel14))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton8)))
-                .addGap(49, 49, 49)
+                    .addComponent(jLabel15)
+                    .addComponent(jButton8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addComponent(jButton2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
-        jButton1.getAccessibleContext().setAccessibleName("btnrandomRace");
-        jButton1.getAccessibleContext().setAccessibleDescription("");
-        jComboBox1.getAccessibleContext().setAccessibleName("mnuRace");
         jLabel2.getAccessibleContext().setAccessibleName("lblRace");
         jLabel3.getAccessibleContext().setAccessibleName("lblGender");
         jLabel4.getAccessibleContext().setAccessibleName("lblAge");
@@ -254,12 +266,6 @@ public class GUIINFO extends javax.swing.JFrame {
         jLabel6.getAccessibleContext().setAccessibleName("lblClass");
         jLabel7.getAccessibleContext().setAccessibleName("lblProfession");
         jLabel8.getAccessibleContext().setAccessibleName("lblProficiences");
-        jComboBox2.getAccessibleContext().setAccessibleName("mnuGender");
-        jComboBox3.getAccessibleContext().setAccessibleName("mnuAge");
-        jComboBox4.getAccessibleContext().setAccessibleName("mnuAlignment");
-        jComboBox5.getAccessibleContext().setAccessibleName("mnuClass");
-        jComboBox6.getAccessibleContext().setAccessibleName("mnuProfession");
-        jComboBox7.getAccessibleContext().setAccessibleName("mnuProficiences");
         jButton3.getAccessibleContext().setAccessibleName("btnrandomGender");
         jButton4.getAccessibleContext().setAccessibleName("btnrandomAge");
         jButton5.getAccessibleContext().setAccessibleName("btnrandomAlignment");
@@ -271,31 +277,193 @@ public class GUIINFO extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+    String[] genderarray = new String[3];
+    
+    genderarray[0] = "Male";
+    genderarray[1] = "Female";
+    genderarray[2] = "Agender";
+    
+         
+    jLabel10.setText(genderarray[GenderGenerator()]);
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-
+    
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+
+        
+    String[] racearray = new String[8];
+    String[] Alignmentarray = new String[9];
+    String[] Classarray = new String[11];
+    String[] Professionarray = new String[7];
+    String[] Proficiencesarray = new String[6];
+    String[] genderarray = new String[3];
+      
+    racearray[0] = "Elf";
+    racearray[1] = "Human";
+    racearray[2] = "Dwarf"; 
+    racearray[3] = "Orc"; 
+    racearray[4] = "Goblin"; 
+    racearray[5] = "Hylian"; 
+    racearray[6] = "Argonian"; 
+    racearray[7] = "Khajiit";
+    
+    genderarray[0] = "Male";
+    genderarray[1] = "Female";
+    genderarray[2] = "Agender";
+    
+    Alignmentarray[0] = "Lawful Good";
+    Alignmentarray[1] = "Neutral Good";
+    Alignmentarray[2] = "Chaotic Good"; 
+    Alignmentarray[3] = "Lawful Neutral"; 
+    Alignmentarray[4] = "True Neutral"; 
+    Alignmentarray[5] = "Chaotic Neutral"; 
+    Alignmentarray[6] = "Lawful Evil"; 
+    Alignmentarray[7] = "Neutral Evil";
+    Alignmentarray[8] = "Chaotic Evil";
+    
+    Classarray[0] = "Barbarian";
+    Classarray[1] = "Bard";
+    Classarray[2] = "Cleric"; 
+    Classarray[3] = "Druid"; 
+    Classarray[4] = "Fighter"; 
+    Classarray[5] = "Monk"; 
+    Classarray[6] = "Paladin"; 
+    Classarray[7] = "Ranger";
+    Classarray[8] = "Rouge";
+    Classarray[9] = "Sorcerer";  
+    Classarray[10] = "Wizard";
+    
+    Professionarray[0] = "Blacksmith";
+    Professionarray[1] = "Botanist";
+    Professionarray[2] = "Mechanic"; 
+    Professionarray[3] = "Highwayman"; 
+    Professionarray[4] = "Pit Fighter"; 
+    Professionarray[5] = "Miner"; 
+    Professionarray[6] = "Assasin";
+    
+    Proficiencesarray[0] = "Agile";
+    Proficiencesarray[1] = "Stealthy";
+    Proficiencesarray[2] = "Strong"; 
+    Proficiencesarray[3] = "Defender"; 
+    Proficiencesarray[4] = "Healthy"; 
+    Proficiencesarray[5] = "Skilled"; 
+    
+    Random rnd = new Random();  
+    int randomint = rnd.nextInt(100);
+    String randomstring = String.valueOf(randomint);
+    
+    
+    jLabel10.setText(genderarray[GenderGenerator()]);
+    jLabel9.setText(racearray[RaceGenerator()]);
+    jLabel12.setText(Alignmentarray[AlignmentGenerator()]);
+    jLabel13.setText(Classarray[ClassGenerator()]);
+    jLabel14.setText(Professionarray[ProfessionGenerator()]);
+    jLabel15.setText(Proficiencesarray[ProficiencesGenerator()]);
+    jLabel11.setText(randomstring);
+   
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox5ActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    Random rnd = new Random();  
+    int randomint = rnd.nextInt(100);
+    String randomstring = String.valueOf(randomint);
+    jLabel11.setText(randomstring);
+    
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        
+     String[] Alignmentarray = new String[9];
+    
+    Alignmentarray[0] = "Lawful Good";
+    Alignmentarray[1] = "Neutral Good";
+    Alignmentarray[2] = "Chaotic Good"; 
+    Alignmentarray[3] = "Lawful Neutral"; 
+    Alignmentarray[4] = "True Neutral"; 
+    Alignmentarray[5] = "Chaotic Neutral"; 
+    Alignmentarray[6] = "Lawful Evil"; 
+    Alignmentarray[7] = "Neutral Evil";
+    Alignmentarray[8] = "Chaotic Evil";    
+    
+    
+    jLabel12.setText(Alignmentarray[AlignmentGenerator()]);   
+        
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+   
+    String[] Classarray = new String[11];
+    
+    Classarray[0] = "Barbarian";
+    Classarray[1] = "Bard";
+    Classarray[2] = "Cleric"; 
+    Classarray[3] = "Druid"; 
+    Classarray[4] = "Fighter"; 
+    Classarray[5] = "Monk"; 
+    Classarray[6] = "Paladin"; 
+    Classarray[7] = "Ranger";
+    Classarray[8] = "Rouge";
+    Classarray[9] = "Sorcerer";  
+    Classarray[10] = "Wizard";   
+    
+    
+    jLabel13.setText(Classarray[ClassGenerator()]);   
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    String[] Professionarray = new String[7];
+    
+    Professionarray[0] = "Blacksmith";
+    Professionarray[1] = "Botanist";
+    Professionarray[2] = "Mechanic"; 
+    Professionarray[3] = "Highwayman"; 
+    Professionarray[4] = "Pit Fighter"; 
+    Professionarray[5] = "Miner"; 
+    Professionarray[6] = "Assasin"; 
+
+    jLabel14.setText(Professionarray[ProfessionGenerator()]);    
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    String[] Proficiencesarray = new String[6];
+    
+    Proficiencesarray[0] = "Agile";
+    Proficiencesarray[1] = "Stealthy";
+    Proficiencesarray[2] = "Strong"; 
+    Proficiencesarray[3] = "Defender"; 
+    Proficiencesarray[4] = "Healthy"; 
+    Proficiencesarray[5] = "Skilled"; 
+    
+    jLabel15.setText(Proficiencesarray[ProficiencesGenerator()]);
+
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-        RandomizedArray();
+     String[] racearray = new String[8];
+    
+    racearray[0] = "Elf";
+    racearray[1] = "Human";
+    racearray[2] = "Dwarf"; 
+    racearray[3] = "Orc"; 
+    racearray[4] = "Goblin"; 
+    racearray[5] = "Hylian"; 
+    racearray[6] = "Argonian"; 
+    racearray[7] = "Khajiit";    
+    
+    
+    jLabel9.setText(racearray[RaceGenerator()]);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public void main(String args[]) 
+    {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -321,36 +489,61 @@ public class GUIINFO extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
+        java.awt.EventQueue.invokeLater(new Runnable() 
+        {
+            public void run() 
+            {
                 new GUIINFO().setVisible(true);
             }
         });
     }
     
-    public static void RandomizedArray()
+    public int RaceGenerator()
     {
-         
-     String[] racearray = new String [8]; 
-     
-     racearray[0] = "Elf";
-     racearray[1] = "Human";
-     racearray[2] = "Dwarf"; 
-     racearray[3] = "Orc"; 
-     racearray[4] = "Goblin"; 
-     racearray[5] = "Hylian"; 
-     racearray[6] = "Argonian"; 
-     racearray[7] = "Khajiit";
+     Random rnd = new Random();  
+     int randomint = rnd.nextInt(8);
+     return randomint;
+    }
     
-    JComboBox jComboBox1 = new JComboBox();
-    Random rnd = new Random(); 
-    int randomint = rnd.nextInt(7);
+    public int GenderGenerator()
+    {
+     Random rnd = new Random();  
+     int randomint = rnd.nextInt(3);
+     return randomint;
+    }
+    
+     
+    public int AlignmentGenerator()
+    {
+     Random rnd = new Random();  
+     int randomint = rnd.nextInt(9);
+     return randomint;
+    }
+     
+    public int ClassGenerator()
+    {
+     Random rnd = new Random();  
+     int randomint = rnd.nextInt(7);
+     return randomint;
+    }
       
-   //jComboBox1.Append(racearray[randomint]);
-           
+    public int ProfessionGenerator()
+    {
+     Random rnd = new Random();  
+     int randomint = rnd.nextInt(7);
+     return randomint;
+    }
+       
+    public int ProficiencesGenerator()
+    {
+     Random rnd = new Random();  
+     int randomint = rnd.nextInt(6);
+     return randomint;
     }
    
 
+
+   
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -361,14 +554,13 @@ public class GUIINFO extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
-    private javax.swing.JComboBox<String> jComboBox6;
-    private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -376,6 +568,7 @@ public class GUIINFO extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    public javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -383,5 +576,5 @@ public class GUIINFO extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
-}
 
+}
