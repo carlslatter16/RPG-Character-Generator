@@ -277,7 +277,11 @@ public class GUIINFO extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
+    /**
+     * The arrays are initialised, given content and are confined to their respective button.
+     * The button also triggers an event in which the label text near the button changes
+     * to random content from the array based on a random number generator.
+     */
     
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
@@ -292,6 +296,13 @@ public class GUIINFO extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    
+    /**
+     * 
+     * This is the event for triggering all the boxes to change, 
+     * it uses the same code as the others but due to some limitations I found,
+     * this way the best way for now, can be improved given time.
+     */
     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
@@ -497,6 +508,14 @@ public class GUIINFO extends javax.swing.JFrame {
             }
         });
     }
+    
+    /**
+     * These are the number generators for each array, 
+     * due to each array being different sizes, 
+     * I couldn't just use one, again, can be improved given time.
+     */
+    
+    
     
     public int RaceGenerator()
     {
